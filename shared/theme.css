@@ -1,0 +1,15 @@
+:root {
+  color-scheme: light dark;
+  --paper: light-dark(#f7f6f2, #161a1d);
+  --ink: light-dark(#19232b, #eef2ed);
+  --line: light-dark(#53656a, #9aa7aa);
+  --accent: light-dark(#006d67, #76ddd0);
+  background: var(--paper);
+  color: var(--ink);
+}
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
+.theme-picker { display: flex; flex-wrap: wrap; gap: .75rem; width: fit-content; border: 1px solid var(--line); border-radius: .5rem; }
+.theme-picker label { display: inline-flex; align-items: center; min-height: 44px; cursor: pointer; }
+.theme-picker input { accent-color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
