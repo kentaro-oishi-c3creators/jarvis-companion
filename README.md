@@ -20,3 +20,9 @@ python -m http.server 8000 --directory site
 ```
 
 サイト本体は site 配下、仕様と公開手順は [実装計画](docs/実装計画.md) にあります。GitHub Pagesは gh-pages ブランチのルートを配信します。
+
+## ORIGAMI版の判断ノート
+
+[初版](https://kentaro-oishi-c3creators.github.io/jarvis-companion/v1/) と [ORIGAMI版](https://kentaro-oishi-c3creators.github.io/jarvis-companion/v2/) をポータルから選べます。ORIGAMI版では「判断ノートを開く」から事実と仮説を入力し、保留か小さな試行を記録します。見直した理由を追記すると過去の判断も読み返せます。「最新の判断を会話に持ち込む」で下書きに転記できます。判断ノートの端末保存は会話の保存設定とは別に選べます。
+
+端末内AIは WebLLM と Qwen2.5 0.5B を利用します。初回はモデルの重み約266 MBに加えて実行用ファイルを取得します。AIへの入力は1回1,200文字までです。公開アプリが個人DriveやCodexのメモリにアクセスする機能はありません。
