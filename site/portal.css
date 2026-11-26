@@ -1,0 +1,24 @@
+* { box-sizing: border-box }
+body { margin: auto; max-width: 1280px; padding: 0 clamp(18px,5vw,72px) 64px; font: 1rem/1.65 system-ui,"Yu Gothic",sans-serif }
+header,.brand { display:flex;align-items:center }
+header { justify-content:space-between;padding:22px 0;border-bottom:1px solid var(--line);gap:10px;flex-wrap:wrap }
+.brand { gap:10px;font:bold 1.65rem/1 system-ui;letter-spacing:-.055em }
+.brand i { display:grid;place-items:center;border-radius:50%;background:var(--ink);color:var(--paper);width:36px;height:36px;font:italic 700 25px Georgia }
+.theme-picker { margin:0;padding:0 12px;gap:5px;font: .84rem system-ui }
+.theme-picker legend { padding:0 4px;font-size:.7rem }
+.intro { margin:clamp(35px,6vw,80px) 0 32px }
+.intro h1 { margin:0;font-size:clamp(2.65rem,5.6vw,5.25rem);letter-spacing:-.065em;line-height:1.13 }
+.intro p,.caption p { margin:.9em 0 }
+.versions { display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:18px }
+.card { display:block;overflow:hidden;border:1px solid color-mix(in srgb,var(--line) 52%,transparent);border-radius:14px;color:inherit;text-decoration:none }
+.card:hover { border-color:var(--accent) }
+.art { height:clamp(120px,13vw,175px);background-color:#09282b;background-image:radial-gradient(#397173 1px,transparent 1px);background-size:14px 14px;display:grid;place-items:center;overflow:hidden }
+.orbit { width:96px;aspect-ratio:1;border:1px solid #83cbbf;border-radius:50%;display:grid;place-items:center;position:relative;box-shadow:0 0 0 15px #78e6dc18,0 0 0 16px #78e6dc48,0 0 0 32px #78e6dc12 }
+.orbit:before,.orbit:after { content:"";position:absolute;width:160%;height:44%;border:1px solid #a5e9d6;border-radius:50%;transform:rotate(30deg) }
+.orbit:after { transform:rotate(-30deg) }
+.orbit b { width:18px;aspect-ratio:1;background:#95f4dc;border-radius:50%;box-shadow:0 0 25px #52ffdb }
+.fold { background-color:#453121;background-image:repeating-linear-gradient(135deg,transparent 0 24px,#db9f6030 25px 26px) }
+.fold b { display:block;width:100px;height:76px;clip-path:polygon(0 15%,43% 38%,92% 0,74% 48%,100% 73%,49% 65%,21% 100%,28% 54%);background:conic-gradient(from -55deg at 47% 54%,#b86737,#ffe1b2 25%,#bf7240 26%,#f3b681 70%,#905030 71%,#ffa268) }
+.caption { padding:20px 24px 24px }.caption span { font:600 .72rem/1 ui-monospace,monospace;letter-spacing:.12em;color:var(--accent) }
+.caption h2 { font-size:clamp(1.6rem,3vw,2.35rem);line-height:1.2;margin:.35em 0;letter-spacing:-.04em }
+.caption strong { font-size:.9rem;color:var(--accent) }
